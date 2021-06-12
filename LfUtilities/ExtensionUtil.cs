@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Reflection;
+
 /// <summary>
 /// Extension methods with some of the utility functions (mostly string functions)
 /// </summary>
