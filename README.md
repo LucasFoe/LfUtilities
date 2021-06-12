@@ -1,2 +1,2 @@
 # LfUtilities
-Utility Library (mostly String finctions and corresponding extension methods). 
+Utility Library (mostly String functions and corresponding extension methods). 
