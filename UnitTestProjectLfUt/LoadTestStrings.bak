@@ -19,7 +19,7 @@ namespace UnitTestProjectLfUt
         private static string textfile = "..\\..\\..\\TestData\\TestText.txt";
         private static string testdir;
         private static string text;
-    
+        private static bool debugflag = false;
 
         public static Exception Ex { get => ex; set => ex = value; }
         public static string Textfile { get => textfile; set => textfile = value; }

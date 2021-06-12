@@ -81,11 +81,6 @@ namespace LfUtilities
             return Util.RemoveDblspaces(s);
         }
 
-        public static string Replace2(this string s, string k, string r)
-        {
-            return Util.Replace2(s, k, r);
-        }
-
         public static string ReplaceRegExp(this string s, string p, string r, bool ignorecaseflag = false)
         {
             return Util.ReplaceRegExp(s, p, r, ignorecaseflag);

@@ -920,6 +920,7 @@ namespace XUnitTestProjectLfUt
             var pdict = dirinfo.GetPropertiesDictionary();
             Assert.IsTrue(pdict.Count > 5);
             Assert.AreEqual(pdict["Name"].ToString(), "TestData", ignoreCase:true);
+            Assert.AreEqual("xxx", "xxx".Replace2("", ""));
         }
 
         [TestMethod]
@@ -931,6 +932,15 @@ namespace XUnitTestProjectLfUt
             Assert.AreEqual(txt, tx2);
             Assert.AreEqual(tx1, txt.Compress());
             Assert.AreEqual(tx2, tx1.Decompress());
+        }
+
+        [TestMethod]
+        public void TestIsInteger()
+        {
+            var txt = "12,23";
+            var x1 = Util.IsInteger(txt);
+
+            Assert.IsFalse(x1);
         }
 
     }

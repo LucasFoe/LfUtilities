@@ -766,13 +766,6 @@ namespace LfUtilities
             }
         }
 
-        public static string Replace2(string s, string k, string rpl)
-        {
-            if (IsEmpty(s)) return s;
-            if (IsEmpty(k)) return s;
-            return s.Replace(rpl, k);
-        }
-
         // apply regex to list
         public static List<string> ReplaceRegExp(List<string> slist, string p, string r, bool ignorecaseflag = false)
         {

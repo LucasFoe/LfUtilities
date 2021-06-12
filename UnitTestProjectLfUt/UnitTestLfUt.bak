@@ -5,6 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 using UnitTestProjectLfUt;
 using System.Data;
+using System.Drawing;
 
 namespace XUnitTestProjectLfUt
 {
@@ -914,6 +915,11 @@ namespace XUnitTestProjectLfUt
             var slc = sl.ReplaceRegExp(@"\s+", "");
             CollectionAssert.AreEqual(slx, slc);
             Assert.IsTrue("1111".IsIn(sl.ToArray()));
+
+            var dirinfo = new DirectoryInfo(testdir);
+            var pdict = dirinfo.GetPropertiesDictionary();
+            Assert.IsTrue(pdict.Count > 5);
+            Assert.AreEqual(pdict["Name"].ToString(), "TestData", ignoreCase:true);
         }
 
         [TestMethod]
